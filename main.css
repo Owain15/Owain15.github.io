@@ -295,21 +295,26 @@ button a {
 
 /*portfolio section*/
 
-.portfolio{}
+.portfolio{justify-items: center;}
+
+.portfolio-title{
+    justify-self:left;
+}
 
 .portfolio-card{
 
-    display: flexbox;
+    /* display: flexbox; */
     margin: 20px;
    
 }
 
 .portfolio-card-title{
-    display: inline;
+    display: flexbox;
+    justify-self: center;
+    /* align-self: center; */
     background-color: var(--cod-grey);
     border-radius: 1rem;
     border: solid 1px whitesmoke;
-    text-decoration: none;
     padding: 5px 10px 5px 10px;
     
 }
@@ -321,7 +326,7 @@ button a {
 .portfolio-card-title:hover{
     border-radius: 1rem 1rem 0 0 ;
     border-bottom-style: none;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
     border-width: 2px;
     transition: 0.2s;
 }
@@ -336,29 +341,20 @@ button a {
     display: block;
 
 }
-.portfolio-card-content:hover > portfolio-card-title{
-    border-radius: 1rem 1rem 0 0 ;
-    border-bottom-style: none;
-    padding-bottom: 2px;
-    border-width: 2px;
-    transition: 0.2s;
-}
+
+/* .portfolio-card-content:hover + .portfolio-card-title  {
+background-color: red;
+}  */
 
 .portfolio-card-content{
     display:none;
     background-color: var(--cod-grey);
-    border-radius: 0 1rem 1rem 1rem;
+    border-radius:  1rem;
     border: solid 2px whitesmoke;
     color: whitesmoke;
     padding: 5px 10px 5px 10px;
 
-    /* background-color: var(--cod-grey);   
-    border-style: solid 5px;
-    border-color: whitesmoke;
-    border-radius: 0rem 1rem 1rem 1rem;
-    
-    margin: 0;
-    padding: 5px; */
+
 }
 
 
